@@ -52,7 +52,28 @@ const NavBar: FC = () => {
             </div>
 
             {/* 二级菜单 */}
-            <div className={styles['sub-nav-container']}></div>
+            <div className={styles['sub-nav-container']}>
+                <ul className={styles['sub-nav-content']}>
+                    <li>
+                        <Link href='/discover'>推荐</Link>
+                    </li>
+                    <li>
+                        <Link href='/discover/toplist'>排行榜</Link>
+                    </li>
+                    <li>
+                        <Link href='/discover/playlist'>歌单</Link>
+                    </li>
+                    <li>
+                        <Link href='/discover/djradio'>主播电台</Link>
+                    </li>
+                    <li>
+                        <Link href='/discover/artist'>歌手</Link>
+                    </li>
+                    <li>
+                        <Link href='/discover/album'>新碟上架</Link>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
