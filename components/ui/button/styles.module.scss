@@ -1,0 +1,31 @@
+.button {
+    margin: 0 12px;
+    border: 1px solid;
+    background-color: transparent;
+    font-size: 12px;
+
+    &.normal {
+        padding: 0;
+        color: #787878;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            color: #ccc;
+            text-decoration: underline #ccc;
+        }
+    }
+
+    &.outline {
+        padding: 8px 18px;
+        border-color: #4f4f4f;
+        border-radius: 20px;
+        color: #ccc;
+
+        &:hover {
+            border-color: #fff;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
