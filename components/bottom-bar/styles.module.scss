@@ -1,4 +1,65 @@
 .bottom-bar {
     height: 172px;
+    border-top: solid #d3d3d3;
     background-color: #f2f2f2;
+
+    .bottom-bar-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 15px;
+        width: 980px;
+        min-width: 980px;
+        height: 115px;
+
+        .left {
+            p {
+                line-height: 24px;
+                color: #666;
+
+                a:hover {
+                    color: #666;
+                    text-decoration: underline;
+                }
+
+                &.link {
+                    color: #999;
+
+                    span {
+                        margin: 0 4px;
+                        color: #c2c2c2;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 10px;
+
+                p {
+                    text-align: center;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.right10 {
+    margin-right: 10px;
 }
